@@ -1,0 +1,222 @@
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #FFB7B7;
+  }
+  img {
+    width: 100px;
+  }
+.header-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-items p{
+    margin-right:20px;
+  } */
+  nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+  
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 5%;
+    height: 80px;
+    background-color: #FFB7B7;
+  }
+  nav img{
+    width:80px;
+    height:40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+  /* nav .logo {
+    float: left;
+    width: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+  } */
+  nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav .links li {
+    list-style: none;
+  }
+  nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  #nav-toggle {
+    position: absolute;
+    top: -100px;
+  }
+  nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+  }
+  
+.title
+{
+    height:40px;
+    background-color: #076BB6;
+    width: 45%;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+}
+.list
+{  
+    width:500px;
+    height: 40px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+    
+}
+
+
+.data
+{
+    margin-left:100px;
+}
+.sylabus
+{
+    margin-left:100px;   
+}
+
+.card
+{
+    margin-left:10%;
+    width:200px;
+    height:300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(25, 5, 5, 0.5) 0px 2px 8px 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    gap:5px;
+}
+.card h3
+{
+    margin-left: 20px;
+}
+
+
+@media (max-width:1024px) {
+    .header-items{font-size: 15px;margin-right: 200px;}
+    .list{margin-left:5px;width:500px}
+    .title{width:50%}
+  }
+  @media (max-width:768px) {
+    .list{margin-left: 15px;width:500px}
+    .title{width:70%}
+    .card{margin-left: 100px;}
+  }
+  @media (max-width:425px) {
+
+    .header img{width:100px;height:50px}
+    .card{margin-left: 50px;}
+    .sylabus{margin-left:50px;font-size: 15px;}
+    .sylabus h1{font-size: 15px;}
+    .data{margin-left: 50px;font-size: 15px;}
+    .data h1{font-size: 15px;}
+    .list{margin-left:3px;width:100px}
+    .title{margin-left:10%;width:70%}
+  }
+  @media (max-width:375px) {
+   
+    .header img{width:100px;height:50px}
+    .card{margin-left: 50px;}
+    .sylabus {margin-left: 50px;font-size: 15px;}
+    .sylabus h1{font-size: 20px;}
+    .data{margin-left: 50px;font-size: 15px;}
+    .data h1{font-size: 20px;}
+    .list{margin-left:5px;}
+    .title{margin-left:10%;width:80%}
+  }
+  @media (max-width:320px) {
+    
+    .card{margin-left: 50px;width:250px}
+    .sylabus{margin-left: 50px;font-size: 15px;}
+    .data{margin-left: 50px;font-size: 15px;}
+    .data h1{font-size: 15px;}
+    .list{margin-left:5px;}
+    .title{margin-left:4%;width:95%}
+  }
+  @media screen and (max-width: 768px) {
+    nav .logo {
+      float: none;
+      width: auto;
+      justify-content: center;
+    }
+    nav .links {
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      top: 100px;
+      bottom: 100%;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgba(0,0,0,.8);
+      overflow: hidden;
+      box-sizing: border-box;
+      transition: all .5s ease-in-out;
+    }
+    nav .links a {
+      font-size: 20px;
+    }
+    nav :checked ~ .links {
+      bottom: 0;
+    }
+    nav .icon-burger {
+      display: block;
+    }
+    nav :checked ~ .icon-burger .line:nth-child(1) {
+      transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(3) {
+      transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+      opacity: 0;
+    }
+    
+  }
+  
+ 
